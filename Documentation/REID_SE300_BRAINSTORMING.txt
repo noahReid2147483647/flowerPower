@@ -1,0 +1,41 @@
+Web App
+-No install required, compatible with any device
+-Faster to build than a native mobile app
+-Easier than developing a native mobile app when you are less experienced
+
+-Require Internet
+-Slower than native
+-No guarantee of security
+
+
+Native
+-Faster than web apps
+-Can access system resources
+-Work without internet connection
+-More safety/security
+-Developer tools available
+
+-Takes more time, more costly
+-Difficult to get approved on app stores
+
+
+Django
+Pyramid
+TurboGears
+Flask
+
+
+
+Develop Program Functionality
+	-Accept user image
+	-Send user image through ML algorithm
+	-Receive flower identification from ML algorithm
+
+Develop User Interface
+	-Upload image functionality
+	-Send image to program
+	-Receive and display identification name and image from program
+	-Process is repeatable
+
+
+
