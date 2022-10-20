@@ -23,9 +23,8 @@ imageOutFrame4 = Frame(topLabelsFrame)
 imageOutFrame5 = Frame(topLabelsFrame)
 imageOutFrame6 = Frame(topLabelsFrame)
 
+
 # upload file
-
-
 def upload_img():
     file_name = filedialog.askopenfilename(filetypes=[('Image Files', '*jpg')])
     print(file_name)
