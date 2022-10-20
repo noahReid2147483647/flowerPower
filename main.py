@@ -1,9 +1,13 @@
 from tkinter import *
+from tkinter import filedialog
 from tkinter.filedialog import askopenfile
+from PIL import Image
+from PIL import ImageTk
+from django.conf.locale import tk
 
 root = Tk()
 root.title("Flower Identification")
-root.geometry("750x300")
+root.geometry("750x400")
 # create labels
 uploadButtonsFrame = Frame(root)
 topLabelsFrame = Frame(root)
@@ -18,12 +22,18 @@ imageOutFrame3 = Frame(topLabelsFrame)
 imageOutFrame4 = Frame(topLabelsFrame)
 imageOutFrame5 = Frame(topLabelsFrame)
 imageOutFrame6 = Frame(topLabelsFrame)
+
 # upload file
 
 
 def upload_img():
-    file_path = askopenfile(mode='r', filetypes=[('Image Files', '*jpg')])
-    if file_path is not None:
+    file_name = filedialog.askopenfilename(filetypes=[('Image Files', '*jpg')])
+    print(file_name)
+    user_image = ImageTk.PhotoImage(Image.open(file_name).resize((244, 244)))
+    label_image = Button(uploadButtonsFrame, image=user_image)
+    label_image.image = user_image
+    label_image.grid(row=1, column=1)
+    if file_name is not None:
         pass
 
 
