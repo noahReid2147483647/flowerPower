@@ -12,7 +12,7 @@ def flower_prediction(filepath):
     model = tf.keras.models.load_model('my_model')
 
     # All Image Categories
-    categories = ['Daisy', 'Dandelion', 'Rose', 'Sunflower', 'Tulip']
+    categories = ['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
 
     # path = 'C:/Users/visha/Flower_Image_Recognition_Project/pythonProject/User_Input/UserImage.jpg'
 
